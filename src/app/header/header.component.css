@@ -1,0 +1,14 @@
+#NavHeader {
+    padding: 0 5vw;
+    height: 12vh;
+    background: #fff;
+}
+
+.aHeaderText {
+    color: #342D69;
+    font-size: 115%;
+}
+
+div {
+    height: 100vh;
+}

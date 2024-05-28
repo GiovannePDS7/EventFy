@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+#PrincipalBG {
+    background: linear-gradient(#fff, #000);
+}
+
+#boxBoasVindas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#TitleBoasVindas {
+    font-size: 480%;
+}
+
+#SubTitleBoasVindas {
+    font-size: 180%;
+}
