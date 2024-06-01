@@ -27,7 +27,7 @@
 
 .carousel,
 .carousel-inner,
-.carousel-item {
+.carousel-item, .carousel-caption {
     height: 88vh;
     /* Altura máxima da tela */
     width: 100vw;
@@ -36,7 +36,34 @@
 
 .carousel-item img {
     object-fit: cover;
-    /* Ajusta a imagem para cobrir completamente o item */
     height: 100%;
     width: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.788);
+    /* Fundo semi-transparente */
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.title {
+    font-size: 10rem;
+    cursor: none;
+
+}
+
+.h5Slider {
+    font-size: 1.3rem;
+
+}
+
+.emphasis {
+    color: #f58e21;
 }
