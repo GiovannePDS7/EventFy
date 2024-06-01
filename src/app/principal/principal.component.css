@@ -1,3 +1,5 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -21,4 +23,20 @@
 
 #SubTitleBoasVindas {
     font-size: 180%;
+}
+
+.carousel,
+.carousel-inner,
+.carousel-item {
+    height: 88vh;
+    /* Altura máxima da tela */
+    width: 100vw;
+    /* Largura máxima da tela */
+}
+
+.carousel-item img {
+    object-fit: cover;
+    /* Ajusta a imagem para cobrir completamente o item */
+    height: 100%;
+    width: 100%;
 }
