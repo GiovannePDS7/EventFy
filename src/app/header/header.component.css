@@ -1,14 +1,46 @@
-#NavHeader {
-    padding: 0 5vw;
+header {
+    transition: background-color 0.2s ease-in;
+    z-index: 999;
     height: 12vh;
-    background: #fff;
+    position: fixed;
+    width: 100%;
+}
+
+
+#NavHeader {
+    background: transparent;
+    padding: 0 5vw;
+    height: 100%;
+    color: #fff;
 }
 
 .aHeaderText {
-    color: #342D69;
     font-size: 115%;
+    text-decoration: none;
 }
 
-div {
+.teste {
     height: 100vh;
+}
+
+.header-scroll {
+    background-color: #fff;
+    box-shadow: 2px 7px 5px rgba(0, 0, 0, 0.5);
+}
+
+.header-top {
+    background-color: transparent;
+}
+
+#imgHeader {
+    height: 100%;
+    padding-bottom: 1vh;
+}
+
+.text-scroll {
+    color: #000 !important;
+}
+
+.text-top {
+    color: #fff !important;
 }

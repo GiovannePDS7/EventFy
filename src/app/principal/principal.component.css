@@ -48,19 +48,16 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.788);
-    /* Fundo semi-transparente */
-    padding: 10px;
-    border-radius: 10px;
-
+    background-color: rgba(0, 0, 0, 0.856);
 }
 
 .title {
-    font-size: 10rem;
-    cursor: none;
+    font-size: 5rem !important;
+    font-family: "Lilita One", sans-serif;
 }
 
 .h5Slider {
+    margin: 20vh 0 0 0;
     font-size: 1.3rem;
 }
 
@@ -68,36 +65,18 @@
     color: #f58e21;
 }
 
-header {
-    transition: background-color 0.4s ease;
-    z-index: 999;
-    height: 12vh;
-    background: transparent;
-    position: fixed;
-    width: 100%;
-}
-
-#NavHeader {
-    background: transparent;
-    padding: 0 5vw;
-    height: 12vh;
-    color: #fff;
-}
-
-.aHeaderText {
-    font-size: 115%;
-    text-decoration: none;
-}
-
 .teste {
-    height: 100vh;
+    height: 20vh;
 }
 
-.header-scroll {
-    background-color: #fff;
-}
-
-.header-top {
-    background-color: transparent;
-    color: #000;
+.fixed-title {
+    text-align: center;
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%);
+    color: white;
+    font-size: 3rem;
+    z-index: 10;
 }
