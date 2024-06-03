@@ -8,7 +8,7 @@ header {
 
 
 #NavHeader {
-    background: transparent;
+    background: #fff;
     padding: 0 5vw;
     height: 100%;
     color: #fff;
@@ -17,6 +17,7 @@ header {
 .aHeaderText {
     font-size: 115%;
     text-decoration: none;
+    color: #332C55 !important;
 }
 
 .teste {
@@ -38,7 +39,7 @@ header {
 }
 
 .text-scroll {
-    color: #000 !important;
+    color: #332C55 !important;
 }
 
 .text-top {

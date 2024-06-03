@@ -48,12 +48,16 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: #fff;
-    background-color: rgba(0, 0, 0, 0.856);
+    background-color: rgba(0, 0, 0, 0.836);
 }
 
-.title {
+#title {
     font-size: 5rem !important;
     font-family: "Lilita One", sans-serif;
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 100%;
 }
 
 .h5Slider {
@@ -72,11 +76,35 @@
 .fixed-title {
     text-align: center;
     width: 100%;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -70%);
     color: white;
     font-size: 3rem;
     z-index: 10;
+}
+
+#toggleElement {
+    border-radius: 3px;
+    width: 2.5px;
+    height: 100%;
+    background: #EF820D;
+    float: right;
+    margin-left: 0.2vw;
+}
+
+#containerFrame {
+
+    height: 11.5vh;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#btnEmpresa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 275%);
 }

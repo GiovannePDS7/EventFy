@@ -1,9 +1,9 @@
-<header id="header" [ngClass]="{'header-scroll': isHeaderScrolled, 'header-top': !isHeaderScrolled}">
+<header id="header"> <!--[ngClass]="{'header-scroll': isHeaderScrolled, 'header-top': !isHeaderScrolled}"-->
     <mat-toolbar id="NavHeader" fxLayout="row" fxLayoutAlign="space-between center">
-        <a [ngClass]="{'text-scroll': isHeaderScrolled, 'text-top': !isHeaderScrolled}" mat-button
-            class="aHeaderText">Quem Somos?</a>
-        <img id="imgHeader" src="./../../assets/img/logo/EventFy.png">
-        <a [ngClass]="{'text-scroll': isHeaderScrolled, 'text-top': !isHeaderScrolled}" mat-button
-            class="aHeaderText">Integrantes</a>
+        <a mat-button class="aHeaderText">Quem Somos?</a>
+        <!--[ngClass]="{'text-scroll': isHeaderScrolled, 'text-top': !isHeaderScrolled}"-->
+        <img id="imgHeader" src="./../../assets/logo/EventFy.png">
+        <a mat-button class="aHeaderText">Integrantes</a>
+        <!--[ngClass]="{'text-scroll': isHeaderScrolled, 'text-top': !isHeaderScrolled}"-->
     </mat-toolbar>
 </header>
