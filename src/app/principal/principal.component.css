@@ -27,10 +27,11 @@
 
 .carousel,
 .carousel-inner,
-.carousel-item, .carousel-caption {
-    height: 88vh;
+.carousel-item,
+.carousel-caption {
+    height: 100vh;
     /* Altura máxima da tela */
-    width: 100vw;
+    width: 100%;
     /* Largura máxima da tela */
 }
 
@@ -51,19 +52,52 @@
     /* Fundo semi-transparente */
     padding: 10px;
     border-radius: 10px;
+
 }
 
 .title {
     font-size: 10rem;
     cursor: none;
-
 }
 
 .h5Slider {
     font-size: 1.3rem;
-
 }
 
 .emphasis {
     color: #f58e21;
+}
+
+header {
+    transition: background-color 0.4s ease;
+    z-index: 999;
+    height: 12vh;
+    background: transparent;
+    position: fixed;
+    width: 100%;
+}
+
+#NavHeader {
+    background: transparent;
+    padding: 0 5vw;
+    height: 12vh;
+    color: #fff;
+}
+
+.aHeaderText {
+    font-size: 115%;
+    text-decoration: none;
+}
+
+.teste {
+    height: 100vh;
+}
+
+.header-scroll {
+    background-color: #fff;
+}
+
+.header-top {
+    background-color: transparent;
+    color: #000;
 }

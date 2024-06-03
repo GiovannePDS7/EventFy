@@ -1,9 +1,18 @@
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="1500">
+<header id="header" [ngClass]="{'header-scroll': isHeaderScrolled, 'header-top': !isHeaderScrolled}">
+  <mat-toolbar id="NavHeader" fxLayout="row" fxLayoutAlign="space-between center">
+    <a mat-button class="aHeaderText">Quem Somos?</a>
+    <img src="./../../assets/img/EventFy.png">
+    <a mat-button class="aHeaderText">Integrantes</a>
+  </mat-toolbar>
+</header>
+
+<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
   <div class="carousel-inner">
     <div class="carousel-item active">
       <img
         src="https://i0.wp.com/www1.diariodeaparecida.com.br/wp-content/uploads/2021/12/retomada-dos-eventos-a-expectativa-para-2022-e-de-que-tudo-esteja-com-100-de-funcionamento-.jpg?fit=1920%2C1080&ssl=1"
         class="d-block w-100" alt="...">
+
       <div
         class="carousel-caption d-none d-md-flex justify-content-center align-items-center align-items-center flex-column">
         <h1 class="text-center title">EventFy</h1>
@@ -30,3 +39,4 @@
     </div>
   </div>
 </div>
+<div class="teste"></div>
