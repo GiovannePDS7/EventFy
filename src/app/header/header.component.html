@@ -1,9 +1,16 @@
-<header id="header"> <!--[ngClass]="{'header-scroll': isHeaderScrolled, 'header-top': !isHeaderScrolled}"-->
+<header id="header" class="d-none d-md-block fixed-top">
     <mat-toolbar id="NavHeader" fxLayout="row" fxLayoutAlign="space-between center">
         <a mat-button class="aHeaderText">Quem Somos?</a>
-        <!--[ngClass]="{'text-scroll': isHeaderScrolled, 'text-top': !isHeaderScrolled}"-->
         <img id="imgHeader" src="./../../assets/logo/EventFy.png">
         <a mat-button class="aHeaderText">Integrantes</a>
-        <!--[ngClass]="{'text-scroll': isHeaderScrolled, 'text-top': !isHeaderScrolled}"-->
+    </mat-toolbar>>
+</header>
+
+
+<!--ENTER LOGICA DO d-(sm/md/lg/xl)-(block/none) -->
+
+<header id="header" class="d-block d-sm-none">
+    <mat-toolbar id="NavHeader" fxLayoutAlign="center">
+        <img id="imgHeader" class="img-fluid" src="./../../assets/logo/EventFy.png">
     </mat-toolbar>
 </header>

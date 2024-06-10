@@ -1,8 +1,6 @@
 header {
-    transition: background-color 0.2s ease-in;
     z-index: 999;
     height: 12vh;
-    position: fixed;
     width: 100%;
 }
 

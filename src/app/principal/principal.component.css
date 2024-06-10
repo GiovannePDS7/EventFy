@@ -104,3 +104,37 @@
     left: 50%;
     transform: translate(-50%, 275%);
 }
+
+#container-mobile {
+    height: 37vh;
+    background: #332C55;
+}
+
+#h1Principal, #spanPrincipal {
+    color: #fff;
+    text-align: center;
+    width: 90%;
+}
+
+#spanPrincipal {
+    margin-top: 3%;
+}
+
+#containerPlataformas-mobile {
+    height: 51vh;
+    background: #c0bebe;
+}
+
+#ImgCell-mobile {
+    height: 90%;
+}
+
+#ImgLaptop-mobile {
+    height: 30%;
+}
+
+#h2Plataformas-mobile {
+    color: #000;
+    text-align: center;
+    font-weight: bold;
+}

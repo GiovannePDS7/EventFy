@@ -1,25 +1,46 @@
 <app-header></app-header>
-<div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img src="../../assets/img/Background/fundo1.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-flex justify-content-center align-items-center flex-column">
+<div class="d-none d-md-block">
+  <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="../../assets/img/Background/fundo1.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-flex justify-content-center align-items-center flex-column">
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../../assets/img/Background/fundo2.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-flex justify-content-center align-items-center flex-column">
+      <div class="carousel-item">
+        <img src="../../assets/img/Background/fundo2.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-flex justify-content-center align-items-center flex-column">
+        </div>
       </div>
-    </div>
-    <div class="carousel-item">
-      <img src="../../assets/img/Background/fundo3.png" class="d-block w-100" alt="...">
-      <div class="carousel-caption d-none d-md-flex justify-content-center align-items-center flex-column">
+      <div class="carousel-item">
+        <img src="../../assets/img/Background/fundo3.png" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-flex justify-content-center align-items-center flex-column">
+        </div>
       </div>
     </div>
   </div>
+  <div id="containerFrame">
+    <h1 class="fixed-title" id="title"></h1>
+    <div id="toggleElement"></div>
+  </div>
+  <button type="button" class="btn btn-outline-warning" id="btnEmpresa">Conheça nossa empresa</button>
 </div>
-<div id="containerFrame">
-  <h1 class="fixed-title" id="title"></h1>
-  <div id="toggleElement"></div>
+<div class="d-flex d-sm-none flex-column">
+  <div class=" d-flex align-items-center flex-column justify-content-center" id="container-mobile">
+    <h1 class="fs-3 center" id="h1Principal">Um Sistema de Gestão de Eventos</h1>
+    <span class="center fs-5" id="spanPrincipal">Crie, gerencie e procure eventos com a Event For you!</span>
+  </div>
+  <div id="containerPlataformas-mobile">
+    <mat-grid-list cols="2" rowHeight="100%">
+      <mat-grid-tile class="d-flex align-items-center justify-content-center">
+        <img id="ImgCell-mobile" class="img-fluid" src="../../assets/img/Elementos/imgCel.png">
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <div class="d-flex flex-column justify-content-center align-items-center">
+          <h2 class="fs-5" id="h2Plataformas-mobile">Busque e acesse de qualquer lugar!</h2>
+          <img id="ImgLaptop-mobile" class="img-fluid mt-3" src="../../assets/img/Elementos/imgLaptop.png">
+        </div>
+      </mat-grid-tile>
+    </mat-grid-list>
+  </div>
 </div>
-<button type="button" class="btn btn-outline-warning" id="btnEmpresa">Conheça nossa empresa</button>
