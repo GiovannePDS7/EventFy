@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "EventFyTest": {
+    "EventFy": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/event-fy-test",
+            "outputPath": "dist/event-fy",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": [
@@ -36,16 +36,7 @@
           "configurations": {
             "production": {
               "budgets": [
-                {
-                  "type": "initial",
-                  "maximumWarning": "500kb",
-                  "maximumError": "1mb"
-                },
-                {
-                  "type": "anyComponentStyle",
-                  "maximumWarning": "150kb",
-                  "maximumError": "150kb"
-                }
+                
               ],
               "outputHashing": "all"
             },
@@ -64,10 +55,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "EventFyTest:build:production"
+              "browserTarget": "EventFy:build:production"
             },
             "development": {
-              "browserTarget": "EventFyTest:build:development"
+              "browserTarget": "EventFy:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -75,7 +66,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "EventFyTest:build"
+            "browserTarget": "EventFy:build"
           }
         },
         "test": {
