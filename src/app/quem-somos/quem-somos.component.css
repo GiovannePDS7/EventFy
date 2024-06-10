@@ -1,0 +1,52 @@
+#qmsomosH1{
+    margin-top: 6%;
+}
+.TxtTitle{
+    font-size: 450% !important;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 5px;
+    text-shadow: 3px 3px #000;
+}
+.grid-qmsomos{
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#container{
+    background: #332C55;
+    
+}
+
+#mainText{
+    margin: 0;
+    width: 90%;
+    text-align: start;
+    color: #fff;
+    font-size: 180%;
+    line-height: 140%;
+    letter-spacing: 1.3px;
+}
+
+#mainContent{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    overflow: hidden;
+}
+
+#imgQmSomos{
+    object-fit: cover;
+    height: 80%;
+}
+
+#divH1{
+    height: 18vh;
+    background: #332C55;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
