@@ -139,3 +139,14 @@
     font-weight: bold;
     width: 90%;
 }
+
+#contentSub{
+    height: 14vh;
+    background: #332C55;
+    color: #fff;
+}
+
+#h3Sub{
+    text-align: center;
+    line-height: 150%;
+}   
