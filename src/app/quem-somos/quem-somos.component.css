@@ -1,3 +1,7 @@
+* {
+    font-family: "Palanquin", sans-serif;
+}
+
 #qmsomosH1 {
     margin-top: 6%;
 }
@@ -54,9 +58,27 @@
     align-items: center;
 }
 
-#qmsomosH1-mobile {}
+#qmsomosH1-mobile {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.644);
+    width: 90%;
+    color: #fff;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    font-size: 2.3rem !important;
+}
 
 #divH1-mobile {
     width: 100%;
-    margin-top: 3%;
+    padding-top: 8%;
+}
+
+#mobile {
+    background: #EF820D;
+}
+
+#mainText-mobile {
+    margin-top: 1.5%;
+    width: 90%;
+    color: #fff;
+    line-height: 1.5;
 }

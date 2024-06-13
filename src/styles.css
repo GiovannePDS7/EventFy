@@ -1,7 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
-*{
-    font-family: "Palanquin", sans-serif;
+* {
+    font-family: "Palanquin", sans-serif !important;
+    ;
 }
 
-html, body { height: 100%; }
-body { margin: 0;}
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+}
