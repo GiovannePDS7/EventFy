@@ -140,13 +140,14 @@
     width: 90%;
 }
 
-#contentSub{
+#contentSub {
     height: 14vh;
     background: #332C55;
     color: #fff;
 }
 
-#h3Sub{
+#h3Sub {
+    width: 90%;
     text-align: center;
     line-height: 150%;
-}   
+}

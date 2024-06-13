@@ -1,26 +1,29 @@
-#qmsomosH1{
+#qmsomosH1 {
     margin-top: 6%;
 }
-.TxtTitle{
+
+.TxtTitle {
     font-size: 450% !important;
     font-weight: bold;
     color: #fff;
     letter-spacing: 5px;
     text-shadow: 3px 3px #000;
 }
-.grid-qmsomos{
-    
+
+.grid-qmsomos {
+
     display: flex;
     justify-content: center;
     align-items: center;
-    
-}
-#container{
-    background: #332C55;
-    
+
 }
 
-#mainText{
+#container {
+    background: #332C55;
+
+}
+
+#mainText {
     margin: 0;
     width: 90%;
     text-align: start;
@@ -30,7 +33,7 @@
     letter-spacing: 1.3px;
 }
 
-#mainContent{
+#mainContent {
     width: 100%;
     display: flex;
     align-items: center;
@@ -38,15 +41,22 @@
     overflow: hidden;
 }
 
-#imgQmSomos{
+#imgQmSomos {
     object-fit: cover;
     height: 80%;
 }
 
-#divH1{
+#divH1 {
     height: 18vh;
     background: #332C55;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+#qmsomosH1-mobile {}
+
+#divH1-mobile {
+    width: 100%;
+    margin-top: 3%;
 }
