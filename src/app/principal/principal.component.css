@@ -121,7 +121,7 @@
 }
 
 #containerPlataformas-mobile {
-    height: 51vh;
+    height: 100vw;
     background: #e6e6e6;
 }
 
@@ -169,4 +169,12 @@
     width: 90%;
     text-align: center;
     line-height: 150%;
+}
+
+#Sub-container-right {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
