@@ -106,6 +106,8 @@
 }
 
 #fundoPrincipal {
+    background-size: 100%;
+    background-repeat: no-repeat;
     background: url('../../assets/img/Background/principalMobile_BG.png');
 }
 
