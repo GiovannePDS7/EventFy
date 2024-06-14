@@ -126,11 +126,30 @@
 }
 
 #ImgCell-mobile {
-    height: 90%;
+    height: 90% auto;
 }
 
 #ImgLaptop-mobile {
-    height: 30%;
+    height: 90% auto;
+}
+
+#container-Laptop {
+    height: 100%;
+    background: #000;
+}
+
+#container-img-Laptop {
+    height: 50%;
+    width: 100%;
+}
+
+#container-right {
+    height: 100%;
+}
+
+#container-h2 {
+
+    background: #863333;
 }
 
 #h2Plataformas-mobile {
