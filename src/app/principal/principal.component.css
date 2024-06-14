@@ -106,17 +106,15 @@
 }
 
 #fundoPrincipal {
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background: url('../../assets/img/Background/principalMobile_BG.png');
+    background: url('../../assets/img/Background/principalMobile_BG.png') no-repeat;
+    background-size: 100% 100%;
 }
-
 .destaquetxt {
     color: #EF820D;
 }
 
 #container-mobile {
-    height: 54vh;
+    height: 52vh;
     background: #000000a4;
 }
 
