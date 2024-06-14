@@ -105,18 +105,28 @@
     transform: translate(-50%, 275%);
 }
 
+#fundoPrincipal {
+    background: url('../../assets/img/Background/principalMobile_BG.png');
+}
+
+.destaquetxt {
+    color: #EF820D;
+}
+
 #container-mobile {
-    height: 37vh;
-    background: #332C55;
+    height: 50vh;
+    background: #000000a4;
 }
 
 #h1Principal, #spanPrincipal {
     color: #fff;
     text-align: center;
     width: 90%;
+    font-weight: bold;
 }
 
 #spanPrincipal {
+    line-height: 1.5;
     margin-top: 3%;
 }
 
