@@ -1,0 +1,92 @@
+* {
+    font-family: "Palanquin", sans-serif;
+}
+
+#divH1-mobile {
+    background: #EF820D;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#IntegrantesH1-mobile {
+    margin: 0;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.644);
+    width: 90%;
+    color: #fff;
+    letter-spacing: 1.5px;
+    line-height: 1;
+    font-size: 2rem !important;
+}
+
+#sliderIntegrantes-mobile {
+    width: 100%;
+    background: #332C55;
+}
+
+.slider-container {
+    display: flex;
+    overflow-x: auto;
+    padding: 6% 10px;
+    gap: 10px;
+    cursor: grab;
+}
+
+.card {
+    min-width: 44vw;
+    background: #EF820D;
+    border-radius: 3px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 7px 0;
+}
+
+.card img {
+    width: 93%;
+}
+
+.member-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 90%;
+
+}
+
+.slider-container:active {
+    cursor: grabbing;
+}
+
+#h3Member {
+    font-weight: bold;
+    margin: 7% 0 0 0;
+    color: #fff;
+    text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
+}
+
+#pMember {
+    color: #fff;
+    text-align: center;
+    font-size: 0.85rem;
+    margin: 2.4% 0 0 0;
+    text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
+}
+
+#spanMember {
+    padding: 3% 0;
+    color: #fff;
+    font-size: 0.78rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#gitIcon {
+    padding-right: 2.5%;
+    width: 13%;
+}

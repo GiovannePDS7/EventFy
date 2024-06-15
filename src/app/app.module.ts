@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { PrincipalComponent } from './principal/principal.component';
 
 import { MatCardModule } from '@angular/material/card';
@@ -18,6 +17,8 @@ import { HeaderComponent } from './header/header.component';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { DragDropModule } from '@angular/cdk/drag-drop';
 
 @NgModule({
   declarations: [
@@ -27,7 +28,7 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     EventosComponent,
     IntegrantesComponent,
     FooterComponent,
-    HeaderComponent
+    HeaderComponent,
   ],
   imports: [
     FlexLayoutModule,
@@ -40,6 +41,10 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatFormFieldModule,
     MatInputModule,
+    BrowserModule,
+    BrowserAnimationsModule,
+    DragDropModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
