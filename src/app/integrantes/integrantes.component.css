@@ -35,7 +35,8 @@
 }
 
 .card {
-    min-width: 44vw;
+    min-width: 42vw;
+    max-width: 45vw;
     background: #EF820D;
     border-radius: 3px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -63,6 +64,7 @@
 }
 
 #h3Member {
+    font-size: 5vw;
     font-weight: bold;
     margin: 7% 0 0 0;
     color: #fff;
@@ -72,7 +74,7 @@
 #pMember {
     color: #fff;
     text-align: center;
-    font-size: 0.85rem;
+    font-size: 3.2vw;
     margin: 2.4% 0 0 0;
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
 }
@@ -80,7 +82,7 @@
 #spanMember {
     padding: 3% 0;
     color: #fff;
-    font-size: 0.78rem;
+    font-size: 3vw;
     width: 100%;
     display: flex;
     align-items: center;
