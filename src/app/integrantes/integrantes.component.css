@@ -55,7 +55,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    width: 90%;
+    width: 100%;
 
 }
 
@@ -92,4 +92,8 @@
 #gitIcon {
     padding-right: 2.5%;
     width: 13%;
+}
+#aContainer{
+    width: 100%;
+    text-decoration: none;
 }
