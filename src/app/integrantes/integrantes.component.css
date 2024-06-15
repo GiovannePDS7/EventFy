@@ -48,6 +48,8 @@
 
 .card img {
     width: 93%;
+    object-fit: cover;
+    image-rendering: auto;
 }
 
 .member-info {
