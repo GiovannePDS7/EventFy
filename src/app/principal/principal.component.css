@@ -105,11 +105,18 @@
     transform: translate(-50%, 275%);
 }
 
-#fundoPrincipal {
+#fundoPrincipal, #fundoPrincipal-tablet {
     background: url('../../assets/img/Background/principalMobile_BG.png') no-repeat;
     background-size: 100% 100%;
 }
-.destaquetxt {
+
+#fundoPrincipal-tablet{
+    background: url('../../assets/img/Background/fundo1.png') no-repeat;
+    background-size: 100% 100%;
+}
+
+
+.destaquetxt, .destaquetxt-tablet {
     color: #EF820D;
 }
 
@@ -130,9 +137,13 @@
     margin-top: 3%;
 }
 
-#containerPlataformas-mobile {
+#containerPlataformas-mobile,  #containerPlataformas-tablet{
     height: 100vw;
     background: #e6e6e6;
+}
+
+#containerPlataformas-tablet{
+    background: #332C55;
 }
 
 #ImgCell-mobile {
@@ -158,15 +169,19 @@
 }
 
 #container-h2 {
-
     background: #863333;
 }
 
-#h2Plataformas-mobile {
-    color: #000;
+#h2Plataformas-mobile, #h2Plataformas-tablet {
+    color: #332C55;
     text-align: center;
     font-weight: bold;
     width: 90%;
+}
+
+#h2Plataformas-tablet{
+    width: 90%;
+    color: #e6e6e6;
 }
 
 #contentSub {
