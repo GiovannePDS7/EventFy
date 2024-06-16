@@ -1,16 +1,23 @@
-#copyright{
+* {
+    font-family: "Palanquin", sans-serif;
+}
+
+
+#copyright {
     width: 100%;
     height: 6vh;
     background-color: #332c55;
     display: table;
 }
-#textCopy{
-    color: white;  
+
+#textCopy {
+    color: white;
     text-align: center;
     vertical-align: middle;
     display: table-cell;
 }
-#redeSocial{
+
+#redeSocial {
     background-color: blue;
     width: 100%;
     height: 13vh;
@@ -19,27 +26,32 @@
     background-position: 100% 94%;
     background-size: 100%;
 }
-#Icons{
-    color: white;  
+
+#Icons {
+    color: white;
     text-align: center;
     vertical-align: middle;
     display: table-cell;
 }
-#imgIcons{
+
+#imgIcons {
     width: 100%;
 }
-#containerLogo{
+
+#containerLogo {
     width: 100%;
     height: 8vh;
     display: table;
-    text-align: center;  
+    text-align: center;
     filter: none;
 }
-#Logo{
+
+#Logo {
     margin-top: 5px;
     width: 7vh;
     height: 7vh;
 }
+
 #containerFind, #containerContact, #containerCreate {
     width: 100%;
     text-align: center;
@@ -47,29 +59,35 @@
     color: #fff;
     height: 32vh;
 }
-#titleFind{
+
+#titleFind {
     font-weight: bold;
 }
-#grid-footer{
+
+#grid-footer {
     background-image: url(../../assets/img/Background/backgroundFooter.jpg);
     background-position: 100% 92%;
     background-repeat: no-repeat;
     background-size: cover;
 }
-#containerFind{
+
+#containerFind {
     border-left: solid 2px #fff;
     border-right: solid 2px #fff;
 }
-#list-create{
+
+#list-create {
     width: 100%;
     margin-left: 25%;
 }
+
 ul {
     list-style: none;
-    padding-left: 0; 
+    padding-left: 0;
 }
+
 li {
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
@@ -78,9 +96,31 @@ li {
     font-size: 30px;
 }
 
-#icons-contact{
+#icons-contact {
     width: 100%;
     height: 28vh;
     text-align: start;
     margin-left: 25%;
+}
+
+/* Mobile*/
+
+#logoFooter-mobile {
+    height: 80%;
+}
+
+#divLogo-mobile {
+    background: #ffffff;
+    height: 10vh;
+}
+
+#contentfooter-mobile {
+    background: #202020;
+}
+
+#h3Redes-mobile {
+    text-align: center;
+    padding: 5% 0;
+    color: #fff;
+    letter-spacing: 1.2px;
 }
