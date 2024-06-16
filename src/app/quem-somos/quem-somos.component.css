@@ -84,6 +84,10 @@
     margin-bottom: 8%;
 }
 
+#mainText-tablet{
+    width: 75%;
+}
+
 #container-mobile, #container-tablet {
     width: 100%;
     background: #332C55;

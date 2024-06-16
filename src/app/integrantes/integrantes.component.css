@@ -21,10 +21,12 @@
     font-size: 2rem !important;
 }
 
-#sliderIntegrantes-mobile {
+#sliderIntegrantes-mobile, #sliderIntegrantes-tablet {
     width: 100%;
     background: #332C55;
 }
+
+
 
 .slider-container {
     display: flex;
@@ -38,7 +40,7 @@
     min-width: 42vw;
     max-width: 45vw;
     background: #EF820D;
-    border-radius: 3px;
+    border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     flex-direction: column;
@@ -48,7 +50,9 @@
 
 .card img {
     width: 93%;
+    margin-top: 2%;
     object-fit: cover;
+    border-radius: 5px;
     image-rendering: auto;
 }
 
@@ -65,20 +69,28 @@
     cursor: grabbing;
 }
 
-#h3Member {
+#h3Member, #h3Member-tablet {
     font-size: 5vw;
     font-weight: bold;
-    margin: 7% 0 0 0;
+    margin: 7% 0 3% 0;
     color: #fff;
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
 }
 
-#pMember {
+#h3Member-tablet{
+    font-size: 5vw;
+}
+
+#pMember, #pMember-tablet {
     color: #fff;
     text-align: center;
     font-size: 3.2vw;
     margin: 2.4% 0 0 0;
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
+}
+
+#pMember-tablet{
+    font-size: 2.5vw;
 }
 
 #spanMember {
