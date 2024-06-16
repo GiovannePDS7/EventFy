@@ -72,12 +72,12 @@
 #h3Member, #h3Member-tablet {
     font-size: 5vw;
     font-weight: bold;
-    margin: 7% 0 3% 0;
+    margin: 7% 0 2% 0;
     color: #fff;
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
 }
 
-#h3Member-tablet{
+#h3Member-tablet {
     font-size: 5vw;
 }
 
@@ -89,7 +89,7 @@
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
 }
 
-#pMember-tablet{
+#pMember-tablet {
     font-size: 2.5vw;
 }
 
@@ -107,7 +107,8 @@
     padding-right: 2.5%;
     width: 13%;
 }
-#aContainer{
+
+#aContainer {
     width: 100%;
     text-decoration: none;
 }
