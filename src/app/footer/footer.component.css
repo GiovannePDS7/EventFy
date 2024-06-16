@@ -137,3 +137,51 @@ li {
     width: 13vw;
 
 }
+
+#containerinfo-mobile {
+    height: 20vh;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.boxFooter-mobile {
+    width: 40vw;
+    height: 100%;
+    background: #0bca0b;
+}
+
+#LinhaFooter-mobile {
+    width: 1vw;
+    border-radius: 5px;
+    background: #ffffff;
+    height: 100%;
+}
+
+#navFooter-mobile {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #d1262f;
+}
+
+#ulFooter-mobile {
+    margin: 0;
+    height: 100%;
+    width: 90%;
+    background: #0fb60f;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.aFooter-mobile {
+    color: #fff;
+    text-decoration: none;
+}
+
+.liFooter-mobile {
+    padding: 3% 0;
+}
