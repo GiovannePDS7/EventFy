@@ -18,17 +18,16 @@
     </div>
 </div>
 
-<div class="d-none d-sm-block d-lg-none" id="sliderIntegrantes-mobile">
+<div class="d-none d-sm-block d-lg-none" id="sliderIntegrantes-tablet">
     <div id="divH1-mobile">
-        <h1 class="fs-5 text-center TxtTitle" id="IntegrantesH1-mobile">Integrantes</h1>
+        <h1 class="fs-1 text-center TxtTitle" id="IntegrantesH1-mobile">Integrantes</h1>
     </div>
     <div class="slider-container" #slider>
         <div class="card" *ngFor="let member of members">
-
             <img [src]="member.image" alt="{{ member.name }}" class="img-fluid" />
             <div class="member-info">
-                <h3 id="h3Member">{{ member.name }}</h3>
-                <p id="pMember">{{ member.role }}</p>
+                <h3 id="h3Member-tablet">{{ member.name }}</h3>
+                <p id="pMember-tablet">{{ member.role }}</p>
                 <a href="{{member.linkGithub}}" id="aContainer">
                     <span id="spanMember"><img id="gitIcon" src="../../assets/img/Elementos/GitIcon.png"
                             alt="">{{member.github}}</span>
