@@ -1,3 +1,48 @@
+<div class="d-none d-xl-block d-xxl-none">
+    <div id="divH1-desktop">
+        <h1 class="fs-1 text-center TxtTitle" id="IntegrantesH1-desktop">Integrantes</h1>
+    </div>
+    <div class="slider-container-desktop" #slider>
+        <div class="card-desktop-xl" *ngFor="let member of members">
+
+            <img [src]="member.image" alt="{{ member.name }}" class="img-fluid" />
+            <div class="member-info">
+                <h3 id="h3Member-desktop">{{ member.name }}</h3>
+                <p id="pMember-desktop-xl">{{ member.role }}</p>
+                <a href="{{member.linkGithub}}" id="aContainer">
+                    <span id="spanMember-desktop"><i class="bi bi-github fs-4"></i>
+                            {{member.github}}</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+<div class="d-none d-xxl-block">
+    <div id="divH1-desktop">
+        <h1 class="fs-1 text-center TxtTitle" id="IntegrantesH1-desktop">Integrantes</h1>
+    </div>
+    <div class="slider-container-desktop" #slider>
+        <div class="card-desktop" *ngFor="let member of members">
+
+            <img [src]="member.image" alt="{{ member.name }}" class="img-fluid" />
+            <div class="member-info">
+                <h3 id="h3Member-desktop">{{ member.name }}</h3>
+                <p id="pMember-desktop">{{ member.role }}</p>
+                <a href="{{member.linkGithub}}" id="aContainer">
+                    <span id="spanMember-desktop"><i class="bi bi-github fs-2"></i>
+                            {{member.github}}</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
 <div class="d-block d-sm-none" id="sliderIntegrantes-mobile">
     <div id="divH1-mobile">
         <h1 class="fs-1 text-center TxtTitle" id="IntegrantesH1-mobile">Integrantes</h1>
@@ -14,25 +59,8 @@
                             alt="">{{member.github}}</span>
                 </a>
             </div>
-        </div>
-    </div>
-</div>
 
-<div class="d-none d-sm-block d-lg-none" id="sliderIntegrantes-tablet">
-    <div id="divH1-mobile">
-        <h1 class="fs-1 text-center TxtTitle" id="IntegrantesH1-mobile">Integrantes</h1>
-    </div>
-    <div class="slider-container" #slider>
-        <div class="card" *ngFor="let member of members">
-            <img [src]="member.image" alt="{{ member.name }}" class="img-fluid" />
-            <div class="member-info">
-                <h3 id="h3Member-tablet">{{ member.name }}</h3>
-                <p id="pMember-tablet">{{ member.role }}</p>
-                <a href="{{member.linkGithub}}" id="aContainer">
-                    <span id="spanMember"><img id="gitIcon" src="../../assets/img/Elementos/GitIcon.png"
-                            alt="">{{member.github}}</span>
-                </a>
-            </div>
         </div>
     </div>
+
 </div>
