@@ -81,7 +81,7 @@
     cursor: grabbing;
 }
 
-#h3Member, #h3Member-desktop {
+#h3Member, #h3Member-desktop, .h3Member-desktop-xl {
     font-size: 5vw;
     font-weight: bold;
     color: #fff;
@@ -90,6 +90,10 @@
 }
 #h3Member-desktop{
     font-size: 2vw;
+}
+.h3Member-desktop-xl{
+    font-size: 2vw;
+    text-align: center;
 }
 
 #pMember, #pMember-desktop, #pMember-desktop-xl {
@@ -142,4 +146,22 @@
     padding: 0;
     margin: 0;
     
+}
+.card-xl{
+    width: 99%;
+    height: 30vh;
+    margin-left: 2%;
+    margin-right: 2%;
+    background: #EF820D;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+#card-container{
+    background: #332C55;
+}
+.card-img{
+    width: 93%;
+    object-fit: cover;
+    image-rendering: auto;
+    margin-left: 3%;
+    margin-top: 3%;
 }
