@@ -48,7 +48,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 7px 0;
+    padding-top: 7px;
 }
 .card-desktop{
     min-width: 16vw;
@@ -84,8 +84,8 @@
 #h3Member, #h3Member-desktop {
     font-size: 5vw;
     font-weight: bold;
-    margin: 7% 0 0 0;
     color: #fff;
+    margin:0;
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
 }
 #h3Member-desktop{
@@ -96,7 +96,6 @@
     color: #fff;
     text-align: center;
     font-size: 3.2vw;
-    margin: 2.4% 0 0 0;
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
 }
 #pMember-desktop{
@@ -129,4 +128,22 @@
 #aContainer{
     width: 100%;
     text-decoration: none;
+}
+
+#pMember{
+    font-size: 3.2vw !important;
+}
+
+#h3Member-container, #pMember-container{
+    width: 100%;
+    height: 7vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#h3Member, #pMember{
+    padding: 0;
+    margin: 0;
+    
 }
