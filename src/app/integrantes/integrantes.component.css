@@ -106,7 +106,8 @@
 }
 
 #spanMember, #spanMember-desktop {
-    padding: 3% 0;
+    padding-top: 3%;
+    padding-bottom: 5%;
     color: #fff;
     font-size: 3vw;
     width: 100%;
