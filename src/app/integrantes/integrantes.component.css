@@ -120,11 +120,6 @@
 .bi::before{
     margin-right: 5px;
 }
-
-#gitIcon {
-    padding-right: 2.5%;
-    width: 13%;
-}
 #aContainer{
     width: 100%;
     text-decoration: none;
