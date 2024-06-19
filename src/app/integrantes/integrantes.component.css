@@ -96,20 +96,22 @@
     text-align: center;
 }
 
-#pMember, #pMember-desktop, #pMember-desktop-xl {
+#pMember, #pMember-desktop, #pMember-desktop-xl, #pMember-desktop-xxl {
     color: #fff;
     text-align: center;
     font-size: 3.2vw;
-    text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
+    text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.384);
 }
 #pMember-desktop{
     font-size: 1.5vw;
 }
-#pMember-desktop-xl{
+#pMember-desktop-xl, #pMember-desktop-xxl{
     font-size: 1.3vw;
 }
-
-#spanMember, #spanMember-desktop {
+#pMember-desktop-xxl{
+    margin-top: 0.5vh;
+}
+#spanMember, #spanMember-desktop, #spanMember-desktop-xl {
     padding-top: 3%;
     padding-bottom: 5%;
     color: #fff;
@@ -121,6 +123,12 @@
 }
 #spanMember-desktop{
     font-size: 1.3vw;
+}
+#spanMember-desktop-xl{
+    font-size: 0.5vw;
+}
+#text-git{
+    font-size: 1.4vw;
 }
 .bi::before{
     margin-right: 5px;
@@ -149,7 +157,7 @@
 }
 .card-xl{
     width: 99%;
-    height: 30vh;
+    min-height: 27.3vh;
     margin-left: 2%;
     margin-right: 2%;
     background: #EF820D;
