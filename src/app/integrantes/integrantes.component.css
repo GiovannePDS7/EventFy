@@ -2,14 +2,15 @@
     font-family: "Palanquin", sans-serif;
 }
 
-#divH1-mobile, #divH1-desktop  {
+#divH1-mobile, #divH1-desktop {
     background: #EF820D;
     height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-#divH1-desktop{
+
+#divH1-desktop {
     background: #332C55;
 }
 
@@ -23,6 +24,7 @@
     line-height: 1;
     font-size: 2rem !important;
 }
+
 #sliderIntegrantes-mobile {
     width: 100%;
     background: #332C55;
@@ -35,11 +37,12 @@
     gap: 10px;
     cursor: grab;
 }
-.slider-container-desktop{
+
+.slider-container-desktop {
     background: #332C55;
 }
 
-.card, .card-desktop, .card-desktop-xl {
+.card, .card-desktop, .card-desktop-xl, .card-lg {
     min-width: 42vw;
     max-width: 45vw;
     background: #EF820D;
@@ -50,22 +53,37 @@
     align-items: center;
     padding-top: 7px;
 }
-.card-desktop{
+
+.card-lg {
+    padding-top: 1.5%;
+}
+
+.card-desktop {
     min-width: 16vw;
     max-width: 17vw;
     padding: 7px 0;
     margin-right: 0.1%;
 }
-.card-desktop-xl{
+
+.card-desktop-xl {
     min-width: 15.5vw;
     max-width: 17vw;
     margin-right: 0.2%;
 }
 
-.card img, .card-desktop img {
+.card-lg {
+    min-width: 30vw;
+    max-width: 45vw;
+}
+
+.card img, .card-desktop img, .card-lg img {
     width: 93%;
     object-fit: cover;
     image-rendering: auto;
+}
+
+.card-lg img {
+    width: 80%;
 }
 
 .member-info {
@@ -74,44 +92,57 @@
     justify-content: center;
     flex-direction: column;
     width: 100%;
-
 }
 
 .slider-container:active {
     cursor: grabbing;
 }
 
-#h3Member, #h3Member-desktop, .h3Member-desktop-xl {
+#h3Member, #h3Member-desktop, .h3Member-desktop-xl, #h3Member-desktop-lg {
     font-size: 5vw;
     font-weight: bold;
     color: #fff;
-    margin:0;
+    margin: 0;
     text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.384);
 }
-#h3Member-desktop{
+
+#h3Member-desktop {
     font-size: 2vw;
 }
-.h3Member-desktop-xl{
+
+#h3Member-desktop-lg {
+    font-size: 3.5vw;
+}
+
+.h3Member-desktop-xl {
     font-size: 2vw;
     text-align: center;
 }
 
-#pMember, #pMember-desktop, #pMember-desktop-xl, #pMember-desktop-xxl {
+#pMember, #pMember-desktop, #pMember-desktop-xl, #pMember-desktop-xxl, #pMember-desktop-lg {
     color: #fff;
     text-align: center;
     font-size: 3.2vw;
     text-shadow: 2px 3px 6px rgba(0, 0, 0, 0.384);
 }
-#pMember-desktop{
+
+#pMember-desktop-lg {
+    font-size: 2.5vw;
+}
+
+#pMember-desktop {
     font-size: 1.5vw;
 }
-#pMember-desktop-xl, #pMember-desktop-xxl{
+
+#pMember-desktop-xl, #pMember-desktop-xxl {
     font-size: 1.3vw;
 }
-#pMember-desktop-xxl{
+
+#pMember-desktop-xxl {
     margin-top: 0.5vh;
 }
-#spanMember, #spanMember-desktop, #spanMember-desktop-xl {
+
+#spanMember, #spanMember-desktop, #spanMember-desktop-xl, #spanMember-lg {
     padding-top: 3%;
     padding-bottom: 5%;
     color: #fff;
@@ -121,28 +152,37 @@
     align-items: center;
     justify-content: center;
 }
-#spanMember-desktop{
+
+#spanMember-lg {
+    font-size: 2.2vw;
+}
+
+#spanMember-desktop {
     font-size: 1.3vw;
 }
-#spanMember-desktop-xl{
+
+#spanMember-desktop-xl {
     font-size: 0.5vw;
 }
-#text-git{
+
+#text-git {
     font-size: 1.4vw;
 }
-.bi::before{
+
+.bi::before {
     margin-right: 5px;
 }
-#aContainer{
+
+#aContainer {
     width: 100%;
     text-decoration: none;
 }
 
-#pMember{
+#pMember {
     font-size: 3.2vw !important;
 }
 
-#h3Member-container, #pMember-container{
+#h3Member-container, #pMember-container, #pMember-container-lg {
     width: 100%;
     height: 7vw;
     display: flex;
@@ -150,12 +190,17 @@
     justify-content: center;
 }
 
-#h3Member, #pMember{
+#pMember-container-lg {
+    height: 4vw;
+}
+
+#h3Member, #pMember {
     padding: 0;
     margin: 0;
-    
+
 }
-.card-xl{
+
+.card-xl {
     width: 99%;
     min-height: 27.3vh;
     margin-left: 2%;
@@ -163,10 +208,12 @@
     background: #EF820D;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
-#card-container{
+
+#card-container {
     background: #332C55;
 }
-.card-img{
+
+.card-img {
     width: 93%;
     object-fit: cover;
     image-rendering: auto;

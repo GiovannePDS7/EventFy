@@ -3,7 +3,7 @@
 }
 
 #qmsomosH1 {
-    margin-top: 6%;
+    margin: 0;
 }
 
 .TxtTitle {
@@ -24,7 +24,6 @@
 
 #container {
     background: #332C55;
-
 }
 
 #mainText {
@@ -32,7 +31,6 @@
     width: 90%;
     text-align: start;
     color: #fff;
-    font-size: 180%;
     line-height: 140%;
     letter-spacing: 1.3px;
 }
@@ -47,8 +45,9 @@
 
 #imgQmSomos {
     object-fit: cover;
-    height: 80%;
+    height: 52vh;
 }
+
 
 #divH1 {
     height: 18vh;
@@ -67,7 +66,7 @@
     font-size: 2.3rem !important;
 }
 
-#divH1-mobile, #divH1-tablet{
+#divH1-mobile, #divH1-tablet {
     width: 100%;
     padding-top: 8%;
 }
@@ -84,7 +83,7 @@
     margin-bottom: 8%;
 }
 
-#mainText-tablet{
+#mainText-tablet {
     width: 75%;
 }
 
@@ -131,26 +130,30 @@
     width: 65%
 }
 
-#missao-img-tablet{
+#missao-img-tablet {
     width: 45%
 }
-#visao-img-tablet{
+
+#visao-img-tablet {
     width: 60%
 }
-#valores-img-tablet{
+
+#valores-img-tablet {
     width: 50%
 }
-.grid-valores{
-   
-}
-#divTextM{
+
+.grid-valores {}
+
+#divTextM {
     width: 100%;
 }
-#container-valores{
+
+#container-valores {
     width: 100%;
     height: 78vh;
-    
+
 }
-.divH3{
+
+.divH3 {
     text-align: center;
 }
