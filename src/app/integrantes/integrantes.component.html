@@ -151,7 +151,7 @@
 </div>
 
 
-<div class="d-block d-lg-none" id="sliderIntegrantes-mobile">
+<div class="d-block d-sm-block d-md-none" id="sliderIntegrantes-mobile">
     <div id="divH1-mobile">
         <h1 class="fs-1 text-center TxtTitle" id="IntegrantesH1-mobile">Integrantes</h1>
     </div>
@@ -164,10 +164,35 @@
                     <h3 id="h3Member">{{ member.name }}</h3>
                 </div>
                 <div id="pMember-container">
-                    <p id="pMember-desktop-xxl">{{ member.role }}</p>
+                    <p id="pMember-desktop-md">{{ member.role }}</p>
                 </div>
                 <a href="{{member.linkGithub}}" id="aContainer">
-                    <span id="spanMember"><i class="bi bi-github fs-2"></i>{{member.github}}</span>
+                    <span id="spanMember"><i class="bi bi-github fs-6"></i>{{member.github}}</span>
+                </a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<div class="d-none d-md-block d-lg-none" id="sliderIntegrantes-mobile">
+    <div id="divH1-mobile">
+        <h1 class="fs-1 text-center TxtTitle" id="IntegrantesH1-mobile">Integrantes</h1>
+    </div>
+    <div class="slider-container" #slider>
+        <div class="card" *ngFor="let member of members">
+
+            <img [src]="member.image" alt="{{ member.name }}" class="img-fluid" />
+            <div class="member-info">
+                <div id="h3Member-container">
+                    <h3 id="h3Member">{{ member.name }}</h3>
+                </div>
+                <div id="pMember-container">
+                    <p id="pMember-desktop-md">{{ member.role }}</p>
+                </div>
+                <a href="{{member.linkGithub}}" id="aContainer">
+                    <span id="spanMember"><i class="bi bi-github fs-1"></i>{{member.github}}</span>
                 </a>
             </div>
 
