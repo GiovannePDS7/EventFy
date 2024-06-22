@@ -110,11 +110,6 @@
     background-size: 100% 100%;
 }
 
-#fundoPrincipal-tablet{
-    background: url('../../assets/img/Background/fundo1.png') no-repeat;
-    background-size: 100% 100%;
-}
-
 
 .destaquetxt, .destaquetxt-tablet {
     color: #EF820D;
