@@ -224,6 +224,8 @@
     display: inline-flex;
     align-items: center;
     justify-content: space-evenly;
+    background: #332C55;
+    padding-bottom: 4vh;
 
 }
 
@@ -232,9 +234,4 @@
     object-fit: cover;
     image-rendering: auto;
     padding-top: 5%;
-}
-
-#container-xl {
-    background: #332C55;
-    padding-bottom: 4vh;
 }
