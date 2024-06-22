@@ -37,6 +37,7 @@ header {
 }
 
 #imgHeader {
+    cursor: pointer;
     height: 100%;
     padding-bottom: 1vh;
 }

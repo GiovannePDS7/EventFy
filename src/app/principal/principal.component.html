@@ -1,5 +1,5 @@
 <app-header></app-header>
-<div class="d-none d-lg-block">
+<div class="d-none d-lg-block" id="principal">
   <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel" data-bs-interval="3500">
     <div class="carousel-inner">
       <div class="carousel-item active">
@@ -23,10 +23,10 @@
     <h1 class="fixed-title" id="title"></h1>
     <div id="toggleElement"></div>
   </div>
-  <button type="button" class="btn btn-outline-warning" id="btnEmpresa">Conheça nossa empresa</button>
+  <button type="button" class="btn btn-outline-warning" (click)="scrollTo('fundo-valores')" id="btnEmpresa">Conheça nossa empresa</button>
 </div>
 
-<div class="d-flex d-sm-none flex-column">
+<div class="d-flex d-sm-none flex-column" id="principal">
   <div id="fundoPrincipal">
     <div class=" d-flex align-items-center flex-column justify-content-center" id="container-mobile">
       <h1 class="fs-1 center" id="h1Principal">Um Sistema de Gestão de Eventos</h1>
@@ -53,7 +53,7 @@
   </div>
 </div>
 
-<div class="d-none d-sm-flex d-lg-none flex-column">
+<div class="d-none d-sm-flex d-lg-none flex-column" id="principal">
   <div id="fundoPrincipal-tablet">
     <div class=" d-flex align-items-center flex-column justify-content-center" id="container-mobile">
       <h1 class="fs-1 center" id="h1Principal">Um Sistema de Gestão de Eventos</h1>

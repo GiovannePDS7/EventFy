@@ -1,63 +1,100 @@
-import { Component } from '@angular/core';
-import { MatCardModule } from '@angular/material/card';
-import { MatInputModule } from '@angular/material/input';
-import { MatFormFieldModule } from '@angular/material/form-field';
-import { FormsModule } from '@angular/forms';
+import { Component, OnDestroy, AfterViewInit } from '@angular/core';
+import { Router, NavigationEnd } from '@angular/router';
+import { Location } from '@angular/common';
+import { filter } from 'rxjs/operators';
 
 @Component({
   selector: 'app-principal',
   templateUrl: './principal.component.html',
   styleUrls: ['./principal.component.css']
 })
-export class PrincipalComponent {
+export class PrincipalComponent implements AfterViewInit {
+  private toggleInterval!: any;
+  private phrases = ['Adquira seu ingresso!', 'Divulgue seus eventos', 'Organize eventos'];
+  private phraseIndex = 0;
+  private charIndex = 0;
+  private titleElement!: HTMLElement | null;
+  private toggleElement!: HTMLElement | null;
+
+  constructor(private router: Router, private location: Location) { }
 
   ngAfterViewInit() {
-    const title = document.getElementById('title');
-    const phrases = ['Adquira seu ingresso!', 'Divulgue seus eventos', 'Organize eventos'];
-    let phraseIndex = 0;
-    let charIndex = 0;
-    const toggleElement = document.getElementById("toggleElement");
+    this.titleElement = document.getElementById('title');
+    this.toggleElement = document.getElementById('toggleElement');
 
-
-    if (!title) {
-      console.error('Elemento com ID "title" não encontrado.');
+    if (!this.titleElement || !this.toggleElement) {
+      console.error('Elementos necessários não foram encontrados.');
       return;
     }
 
-    function addText() {
-      if (charIndex < phrases[phraseIndex].length) {
-        toggleElement!.style.visibility = "visible";
-        title!.innerHTML += phrases[phraseIndex][charIndex];
-        charIndex++;
-        setTimeout(addText, 120);
-      } else {
-        const toggleInterval = setInterval(toggle, 500);
-        setTimeout(function () {
-          clearInterval(toggleInterval);
-        }, 2300);
-        setTimeout(removeText, 2300); // Espera um tempo antes de começar a remover o texto
-      }
+    this.addText();
+  }
+
+
+  private addText() {
+    if (this.charIndex < this.phrases[this.phraseIndex].length) {
+      this.toggleElement!.style.visibility = 'visible';
+      this.titleElement!.innerHTML += this.phrases[this.phraseIndex][this.charIndex];
+      this.charIndex++;
+      setTimeout(() => this.addText(), 120);
+    } else {
+      this.toggleInterval = setInterval(() => this.toggle(), 500);
+      setTimeout(() => {
+        clearInterval(this.toggleInterval);
+        this.removeText();
+      }, 2300);
+    }
+  }
+
+  private removeText() {
+    if (this.charIndex > 0) {
+      this.toggleElement!.style.visibility = 'visible';
+      this.titleElement!.innerHTML = this.titleElement!.innerHTML.slice(0, -1);
+      this.charIndex--;
+      setTimeout(() => this.removeText(), 70);
+    } else {
+      this.phraseIndex = (this.phraseIndex + 1) % this.phrases.length;
+      setTimeout(() => this.addText(), 200);
+    }
+  }
+
+  private toggle() {
+    this.toggleElement!.style.visibility = this.toggleElement!.style.visibility === 'hidden' ? 'visible' : 'hidden';
+  }
+
+
+  scrollTo(elementId: string): void {
+    const url = this.router.url.split('#')[0];
+    const newUrl = url + '#' + elementId;
+
+    if (this.router.url === newUrl) {
+      this.performScroll(elementId);
+    } else {
+      this.router.navigate([this.getCurrentRoute()], { fragment: elementId });
     }
 
-    function removeText() {
-      if (charIndex > 0) {
-        toggleElement!.style.visibility = "visible";
-        title!.innerHTML = title!.innerHTML.slice(0, -1);
-        charIndex--;
-        setTimeout(removeText, 70);
-      } else {
-        phraseIndex = (phraseIndex + 1) % phrases.length;
-        setTimeout(addText, 200);
-      }
-    }
-    function toggle() {
-      if (toggleElement!.style.visibility === "hidden" || toggleElement!.style.visibility === "") {
-        toggleElement!.style.visibility = "visible";
-      } else {
-        toggleElement!.style.visibility = "hidden";
-      }
-    }
+    this.router.events.pipe(
+      filter(event => event instanceof NavigationEnd)
+    ).subscribe(() => {
+      this.performScroll(elementId);
+      this.location.replaceState(this.getCurrentRouteWithoutFragment());
+    });
+  }
 
-    addText();
+  private performScroll(elementId: string): void {
+    const element = document.getElementById(elementId);
+    if (element) {
+      const yOffset = -15 * window.innerHeight / 100;
+      const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
+      window.scrollTo({ top: y, behavior: 'smooth' });
+    }
+  }
+
+  private getCurrentRoute(): string {
+    return this.router.url.split('#')[0];
+  }
+
+  private getCurrentRouteWithoutFragment(): string {
+    return this.router.url.split('#')[0];
   }
 }

@@ -56,7 +56,6 @@
     font-family: "Lilita One", sans-serif;
     display: block;
     white-space: nowrap;
-    overflow: hidden;
     width: 100%;
 }
 
@@ -81,7 +80,7 @@
     border-radius: 3px;
     width: 2.5px;
     height: 100%;
-    background: #EF820D;
+    background: #ffffff;
     float: right;
     margin-left: 0.2vw;
 }
@@ -132,12 +131,12 @@
     margin-top: 3%;
 }
 
-#containerPlataformas-mobile,  #containerPlataformas-tablet{
+#containerPlataformas-mobile, #containerPlataformas-tablet {
     height: 100vw;
     background: #e6e6e6;
 }
 
-#containerPlataformas-tablet{
+#containerPlataformas-tablet {
     background: #332C55;
 }
 
@@ -174,7 +173,7 @@
     width: 90%;
 }
 
-#h2Plataformas-tablet{
+#h2Plataformas-tablet {
     width: 90%;
     color: #e6e6e6;
 }

@@ -1,9 +1,9 @@
 <header id="header" class="d-none d-lg-block fixed-top">
     <mat-toolbar id="NavHeader" fxLayout="row" fxLayoutAlign="space-between center">
-        <a mat-button class="aHeaderText" (click)="scrollToQuemSomos()">Quem Somos?</a>
-        <img id="imgHeader" src="./../../assets/logo/EventFy.png">
-        <a mat-button class="aHeaderText" (click)="scrollToIntegrantes()">Integrantes</a>
-    </mat-toolbar>>
+        <a mat-button class="aHeaderText" (click)="scrollTo('quem-somos')">Quem Somos?</a>
+        <img id="imgHeader" (click)="scrollTo('principal')" src="./../../assets/logo/EventFy.png">
+        <a mat-button class="aHeaderText" (click)="scrollTo('integrantes')">Integrantes</a>
+    </mat-toolbar>
 </header>
 
 
@@ -11,12 +11,12 @@
 
 <header id="header" class="d-block d-sm-none">
     <mat-toolbar id="NavHeader" fxLayoutAlign="center">
-        <img id="imgHeader" class="img-fluid" src="./../../assets/logo/EventFy.png">
+        <img id="imgHeader" (click)="scrollTo('principal')" class="img-fluid" src="./../../assets/logo/EventFy.png">
     </mat-toolbar>
 </header>
 
 <header id="header" class="d-none d-sm-block">
     <mat-toolbar id="NavHeader" fxLayoutAlign="center">
-        <img id="imgHeader" class="img-fluid" src="./../../assets/logo/EventFy.png">
+        <img id="imgHeader" (click)="scrollTo('principal')" class="img-fluid" src="./../../assets/logo/EventFy.png">
     </mat-toolbar>
 </header>
