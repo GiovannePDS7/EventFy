@@ -79,7 +79,7 @@
     padding-top: 8%;
 }
 
-#mobile, #quem-somos {
+#quem-somos {
     background: #f18a1c;
 }
 
@@ -149,6 +149,7 @@
 #valores-img-tablet {
     width: 50%
 }
+
 #divTextM {
     width: 100%;
 }

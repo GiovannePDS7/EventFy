@@ -11,7 +11,7 @@ export class HeaderComponent {
   constructor(private router: Router, private location: Location) {}
 
   scrollToQuemSomos(): void {
-    const url = this.router.url.split('#')[0]; // Obtém a URL sem o fragmento
+    const url = this.router.url.split('#')[0];
     const newUrl = url + '#quem-somos';
 
     if (this.router.url === newUrl) {
@@ -47,9 +47,9 @@ export class HeaderComponent {
   private scrollToElement(elementId: string): void {
     const element = document.getElementById(elementId);
     if (element) {
-      const yOffset = -80; // Ajuste conforme necessário
+      const yOffset = -12 * window.innerHeight / 100;
       const y = element.getBoundingClientRect().top + window.pageYOffset + yOffset;
-    window.scrollTo({ top: y, behavior: 'smooth' });
+      window.scrollTo({ top: y, behavior: 'smooth' });
     }
   }
 }
