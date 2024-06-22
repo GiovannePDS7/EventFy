@@ -22,14 +22,6 @@
 
 }
 
-#grid-qmsomos-img {
-    justify-content: flex-end !important;
-}
-
-#grid-qmsomos-txt {
-    width: 60% !important;
-}
-
 #container {
     background: #332C55;
 }
@@ -47,13 +39,13 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     overflow: hidden;
 }
 
 #imgQmSomos {
     object-fit: cover;
-    height: 100%;
+    height: 52vh;
 }
 
 
@@ -79,7 +71,7 @@
     padding-top: 8%;
 }
 
-#quem-somos {
+#mobile, #tablet {
     background: #f18a1c;
 }
 
@@ -155,11 +147,79 @@
 }
 
 #container-valores {
+    color: #fff;
     width: 100%;
-    height: 78vh;
-
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
-.divH3 {
+.divH3, .divH3-lg {
     text-align: center;
+}
+
+.divH3-lg {
+    margin-top: 60%;
+}
+
+.text-valores {
+    width: 90%;
+    text-align: center;
+    line-height: 130%;
+    margin-left: 5%;
+    letter-spacing: 1.3px;
+    color: #332C55;
+}
+
+#imgMissao {
+    width: 65%
+}
+
+.container-imgV {
+    text-align: center;
+}
+
+#divH3-Visao {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#imgVisao, #imgVisao-lg {
+    width: 80%
+}
+
+#imgVisao-lg {
+    margin-top: 60%;
+}
+
+#imgValores {
+    width: 80%;
+    margin-left: 4%;
+    margin-top: 4%;
+}
+
+#fundo-valores {
+    background: #EF820D;
+    padding: 2% 0;
+}
+
+#divtextM {
+    width: 90%;
+}
+
+#text-missao {
+    width: 90%;
+    text-align: center;
+    margin-left: 5%;
+}
+
+#quem-somos {
+    background: #f18a1c;
+}
+
+.valoresH3 {
+    margin: 0;
+    height: 6vh;
+    color: #292444;
 }

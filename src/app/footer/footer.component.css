@@ -76,9 +76,13 @@
     border-right: solid 2px #fff;
 }
 
-#list-create {
+#list-create, #list-create-lg {
     width: 100%;
     margin-left: 25%;
+}
+
+#list-create-lg {
+    margin-left: 16%;
 }
 
 ul {
@@ -96,11 +100,15 @@ li {
     font-size: 30px;
 }
 
-#icons-contact {
+#icons-contact, #icons-contact-lg {
     width: 100%;
     height: 28vh;
     text-align: start;
     margin-left: 25%;
+}
+
+#icons-contact-lg {
+    margin-left: 12%;
 }
 
 /* Mobile*/
@@ -209,5 +217,3 @@ li {
     height: 4vh;
     font-size: 3vw;
 }
-
-#redesSociais-mobile {}
