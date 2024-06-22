@@ -2,7 +2,7 @@
     font-family: "Palanquin", sans-serif;
 }
 
-#divH1-mobile, #divH1-desktop {
+#divH1-mobile, #divH1-desktop, #divH1-tablet {
     background: #EF820D;
     height: 10vh;
     display: flex;
@@ -10,8 +10,12 @@
     align-items: center;
 }
 
-#divH1-desktop {
+#divH1-desktop, #divH1-tablet {
     background: #332C55;
+}
+
+#divH1-mobile {
+    margin-bottom: 5%;
 }
 
 #IntegrantesH1-mobile, #IntegrantesH1-desktop {
@@ -25,7 +29,7 @@
     font-size: 2rem !important;
 }
 
-#sliderIntegrantes-mobile {
+#integrantes {
     width: 100%;
     background: #332C55;
 }
@@ -33,7 +37,7 @@
 .slider-container, .slider-container-desktop {
     display: flex;
     overflow-x: auto;
-    padding: 6% 10px;
+    padding: 0 2% 5% 2%;
     gap: 10px;
     cursor: grab;
 }

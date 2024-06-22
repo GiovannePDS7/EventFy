@@ -71,8 +71,10 @@
                 <nav id="navFooter-mobile">
                     <ul id="ulFooter-mobile">
                         <li class="liFooter-mobile"><a class="aFooter-mobile" href="">Inicio</a></li>
-                        <li class="liFooter-mobile"><a class="aFooter-mobile" href="">Quem Somos?</a></li>
-                        <li class="liFooter-mobile"><a class="aFooter-mobile" href="">Integrantes</a></li>
+                        <li class="liFooter-mobile"><a class="aFooter-mobile" (click)="scrollToQuemSomos()">Quem
+                                Somos?</a></li>
+                        <li class="liFooter-mobile"><a class="aFooter-mobile"
+                                (click)="scrollToIntegrantes()">Integrantes</a></li>
                     </ul>
                 </nav>
             </div>
@@ -86,5 +88,5 @@
             </div>
         </div>
     </div>
-        <span id="copyrightFooter-mobile">copyright ©2024</span>
+    <span id="copyrightFooter-mobile">copyright ©2024</span>
 </footer>
