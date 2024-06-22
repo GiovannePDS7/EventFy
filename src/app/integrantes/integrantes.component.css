@@ -81,7 +81,8 @@
 }
 
 .card img, .card-desktop img, .card-lg img {
-    width: 93%;
+    width: 90%;
+    height: 72%;
     object-fit: cover;
     image-rendering: auto;
 }
@@ -206,12 +207,11 @@
 #h3Member, #pMember {
     padding: 0;
     margin: 0;
-
 }
 
 .card-xl {
-    min-width: 16vw;
-    max-width: 20vw;
+    width: 36vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -220,22 +220,34 @@
     background: #EF820D;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    /* Inclui preenchimento e bordas na largura e altura */
+    margin: 1%;
 }
 
 #card-container {
     width: 100%;
+    height: 105vh;
     display: inline-flex;
     align-items: center;
     justify-content: space-evenly;
     background: #332C55;
-    padding-bottom: 4vh;
+    margin-bottom: 4vh;
+    flex-wrap: wrap;
 
 }
 
 .card-img {
     width: 90%;
+    height: 34vh;
     object-fit: cover;
     image-rendering: auto;
     padding-top: 5%;
+}
+
+.imagemcontainer-xl {
+    padding-top: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
 }
